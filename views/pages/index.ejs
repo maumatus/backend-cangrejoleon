@@ -8,35 +8,39 @@
 
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <h1>All Books</h1>
+    <h2><% data.length %> </h2>
     <table>
       <tr>
-        <th>Book Name</th>
-        <th>Book Author</th>
-        <th>Book Pages</th>
-        <th>Book Price</th>
-        <th>Book Availability</th>
-        <th>Issue</th>
-        <th>Return</th>
-        <th>Delete</th>
+        <th>Titulo</th>
+        <th>Isbn</th>
+        <th>Paginas</th>
+        <th>Portada</th>
+        <th>Status</th>
+        <th>Autores</th>
+        <th>Categorías</th>
       </tr>
-      <% data.forEach(element=>{ %>
+      <% data.forEach(function(el) { %>
         <tr>
           <td>
-            <% element.bookName %>
+            <%= el.title %>
           </td>
           <td>
-            <% element.bookAuthor %>
+            <%= el.isbn %>
           </td>
           <td>
-            <% element.bookPages %>
+            <%= el.pageCount %>
           </td>
           <td>
-            <% element.bookPrice %>
+            <img src= <%= el.thumbnailUrl %> alt="img" width="100">
           </td>
           <td>
-            <% element.bookState %>
+            <%= el.status %>
+          </td>
+          <td>
+            <%= el.authors %>
+          </td>
+          <td>
+            <%= el.categories %>
           </td>
         </tr>
         <% }) %>

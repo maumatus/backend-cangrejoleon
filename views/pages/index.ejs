@@ -14,6 +14,8 @@
         <th>Titulo</th>
         <th>Isbn</th>
         <th>Paginas</th>
+        <th>Fecha Publicación</th>
+        <th>Descripción</th>
         <th>Portada</th>
         <th>Status</th>
         <th>Autores</th>
@@ -29,6 +31,12 @@
           </td>
           <td>
             <%= el.pageCount %>
+          </td>
+          <td>
+            <%= el.publishedDate %>
+          </td>
+          <td>
+            <%= el.shortDescription %>
           </td>
           <td>
             <img src= <%= el.thumbnailUrl %> alt="img" width="100">

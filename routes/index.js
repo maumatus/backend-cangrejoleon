@@ -5,7 +5,7 @@ const data = require('../bd/books.js')
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('pages/index', {
-    title: "Titulo prueba",
+    title: "Colección general libros",
     data: data,
   });
   console.log("vemos si nos carga los libros en este scope")

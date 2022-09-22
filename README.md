@@ -8,3 +8,5 @@ Se me complicaba pensar desde el FrontEnd, que ya esta definido en terminos
 generales así que estoy desarrollando Backend antes, asi se me hace mas facil pensar en los detalles del frontend. EJS permite modularizar lo ya
 hecho en CSS y JS Vanilla. Es mas rapida esta manera de lograr algo funcional
 para ya comenzar a ver App web de CangrejoLeon.
+
+* Como corrección faltaría agregar segmentacion mas literaria: Genero, Colección y categoría.

@@ -13,27 +13,15 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next) {
-  res.render('pages/index', {
-    title: "Colección general libros",
-    data: data,
-  });
+  res.send('Respuesta Metodo POST de Express');
 });
 
 router.put('path', (req, res) => {
-});('/', function(req, res, next) {
-  res.render('pages/index', {
-    title: "Colección general libros",
-    data: data,
-  });
+  res.send('Respuesta metodo PUT')
 });
 
 router.delete('path', (req, res) => {
-
-});('/', function(req, res, next) {
-  res.render('pages/index', {
-    title: "Colección general libros",
-    data: data,
-  });
+  res.delete('Respuesta a metodo DELETE')
 });
 
 

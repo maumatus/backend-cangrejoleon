@@ -9,23 +9,10 @@ const usersRouter = require('./routes/users');
 
 const app = express();
 
+const books = require('./bd/books.js');
+
 //Conexión DB
-const mongoose = require("mongoose");
 
-/*-------DB--------*/
-//Seteamos la conexión al ORM Mongoose
-const mongoDB = "mongodb://127.0.0.1/my_database";
-mongoose.connect(mongoDB, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
-
-//Obtenemos la conexión por defecto
-const db = mongoose.connection;
-
-//Unimos la conexión a evento error (para obtener notificaciones de errores)
-db.on("error", console.error.bind(console, "MongoDB conección error:"));
-/*-------DB--------*/
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
